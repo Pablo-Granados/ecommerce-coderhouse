@@ -37,13 +37,17 @@ function Product({ onHandleGoBack, categorySelected }) {
         setFilteredProducts([]);
     };
 
+    const handlePress = (item) => {
+        alert("Detalle momentáneamente no disponible");
+    };
+
     return (
         <View style={styles.container}>
             <TouchableOpacity style={styles.goBack} onPress={onHandleGoBack}>
                 <Ionicons
-                name="arrow-back-circle" 
-                size={30} 
-                color={COLORS.background} />
+                    name="arrow-back-circle"
+                    size={30}
+                    color={COLORS.background} />
                 <Text style={styles.goBackText}>Atras</Text>
             </TouchableOpacity>
             <View style={styles.header}>
@@ -70,19 +74,19 @@ function Product({ onHandleGoBack, categorySelected }) {
                 style={styles.products}
                 data={search.length > 0 ? filteredProducts : filteredProductsByCategory}
                 renderItem={({ item }) => (
-                    <TouchableOpacity onPress={() => null} style={styles.productContainer}>
+                    <TouchableOpacity onPress={handlePress} style={styles.productContainer}>
                         <ImageBackground
                             source={{ uri: item.image }}
                             style={[styles.productImage, { backgroundColor: categorySelected.color }]}
                             resizeMethod="resize"
                             resizeMode="contain"
                         />
-                        <View style={styles.productDetail}>
-                            <Text style={styles.productName} numberOfLines={1} ellipsizeMode="tail">
-                                {item.name}
-                            </Text>
-                            <Text style={styles.productPrice}>{`${item.currency.code} ${item.price}`}</Text>
-                        </View>
+                            <View style={styles.productDetail}>
+                                <Text style={styles.productName} numberOfLines={1} ellipsizeMode="tail">
+                                    {item.name}
+                                </Text>
+                                <Text style={styles.productPrice}>{`${item.currency.code} ${item.price}`}</Text>
+                            </View>
                     </TouchableOpacity>
                 )}
                 contentContainerStyle={styles.productsContent}
