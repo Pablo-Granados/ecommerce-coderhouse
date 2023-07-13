@@ -52,7 +52,8 @@ function Product({ onHandleGoBack, categorySelected }) {
                     onHandleChangeText={onHandleChangeText}
                     onHandleFocus={onHandleFocus}
                     value={search}
-                    placeholder="Search"
+                    placeholder="Buscar..."
+                    placeholderTextColor="black"
                     borderColor={borderColor}
                 />
                 {search.length > 0 && (

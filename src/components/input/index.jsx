@@ -14,7 +14,7 @@ const Input = ({ borderColor, onHandleFocus, onHandleBlur, onHandleChangeText, .
                 autoCorrect={false}
                 autoCapitalize="none"
                 cursorColor={borderColor}
-                placeholderTextColor={borderColor}
+                // placeholderTextColor={borderColor}
             />
         </View>
     );
