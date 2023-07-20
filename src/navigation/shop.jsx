@@ -1,7 +1,7 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Ionicons } from '@expo/vector-icons';
-
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Animated, StyleSheet, TouchableOpacity } from "react-native";
+
 import { Categories, Products, ProductDetail } from "../screens";
 import { COLORS, FONTS } from "../themes";
 
@@ -10,7 +10,9 @@ const Stack = createNativeStackNavigator();
 
 function ShopNavigator() {
     return (
-        <Stack.Navigator initialRouteName="Categories" screenOptions={() => ({
+        <Stack.Navigator 
+        initialRouteName="Categories" 
+        screenOptions={() => ({
             headerStyle: {
                 backgroundColor: COLORS.primary,
                 height: 80,
@@ -20,11 +22,11 @@ function ShopNavigator() {
                 fontSize: 16,
             },
             headerTintColor: COLORS.white,
-            animation: 'fade_from_bottom',
+            animation: 'slide_from_right',
         })}>
-            <Stack.Screen name="Categories" component={Categories} />
+            <Stack.Screen name="Categorias" component={Categories} />
             <Stack.Screen
-                name="Products"
+                name="Productos"
                 component={Products}
                 options={({ navigation, route }) => ({
                     headerStyle: {
@@ -47,7 +49,7 @@ function ShopNavigator() {
                     },
                     headerLeft: () => (
                         <TouchableOpacity style={styles.goBack} onPress={() => navigation.goBack()}>
-                            {/* <Ionicons name="arrow-back-circle" size={30} color={COLORS.white} /> */}
+                            <Ionicons name="arrow-back-circle" size={30} color={COLORS.white} />
                         </TouchableOpacity>
                     ),
                     title: route.params.name,

@@ -8,7 +8,7 @@ import PRODUCTS from '../../constants/data/products.json';
 import { COLORS } from '../../themes';
 
 function Product({ navigation, route }) {
-    const {categoryId, color} = route.params;
+    const { categoryId, color } = route.params;
     const [search, setSearch] = useState('');
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [borderColor, setBorderColor] = useState(COLORS.primary);
@@ -38,8 +38,8 @@ function Product({ navigation, route }) {
         setFilteredProducts([]);
     };
 
-    const handlePress = (item) => {
-        alert("Detalle momentáneamente no disponible");
+    const onSelectProduct = ({ productId, name }) => {
+        navigation.navigate('ProductDetail', { productId, color, name});
     };
 
     return (
@@ -68,19 +68,21 @@ function Product({ navigation, route }) {
                 style={styles.products}
                 data={search.length > 0 ? filteredProducts : filteredProductsByCategory}
                 renderItem={({ item }) => (
-                    <TouchableOpacity onPress={handlePress} style={styles.productContainer}>
+                    <TouchableOpacity
+                        onPress={() => onSelectProduct ({productId: item.id, name: item.name})} 
+                        style={styles.productContainer}>
                         <ImageBackground
                             source={{ uri: item.image }}
                             style={[styles.productImage, { backgroundColor: color }]}
                             resizeMethod="resize"
                             resizeMode="contain"
                         />
-                            <View style={styles.productDetail}>
-                                <Text style={styles.productName} numberOfLines={1} ellipsizeMode="tail">
-                                    {item.name}
-                                </Text>
-                                <Text style={styles.productPrice}>{`${item.currency.code} ${item.price}`}</Text>
-                            </View>
+                        <View style={styles.productDetail}>
+                            <Text style={styles.productName} numberOfLines={1} ellipsizeMode="tail">
+                                {item.name}
+                            </Text>
+                            <Text style={styles.productPrice}>{`${item.currency.code} ${item.price}`}</Text>
+                        </View>
                     </TouchableOpacity>
                 )}
                 contentContainerStyle={styles.productsContent}
