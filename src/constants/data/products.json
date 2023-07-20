@@ -152,5 +152,407 @@
         ],
         "rating": 4,
         "stock": 20
+    },
+    {
+        "id": 6,
+        "categoryId": 5,
+        "name": "Apple iPad Pro 2023",
+        "description": "Apple iPad Pro 2023 256GB",
+        "price": 1200,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fapple-ipad-pro-2023.png?alt=media&token=7b15dbbf-697f-41a7-8c9f-0e2b6b3c1851",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "apple",
+            "ipad",
+            "pro",
+            "2023",
+            "256gb"
+        ],
+        "features": [
+            "12.9-inch Liquid Retina XDR display",
+            "A14X Bionic chipset",
+            "8GB RAM",
+            "256GB storage",
+            "12MP+10MP dual rear cameras",
+            "8MP front camera",
+            "8000mAh battery"
+        ],
+        "rating": 4.8,
+        "stock": 15
+    },
+    {
+        "id": 7,
+        "categoryId": 5,
+        "name": "Dell XPS 17",
+        "description": "Dell XPS 17 Laptop 1TB",
+        "price": 2200,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fdell-xps-17.png?alt=media&token=36aa4811-55f3-463f-ae7e-2ca80b19c537",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "dell",
+            "xps",
+            "17",
+            "laptop",
+            "1tb"
+        ],
+        "features": [
+            "17-inch UHD+ display",
+            "Intel Core i9 processor",
+            "32GB RAM",
+            "1TB SSD storage",
+            "NVIDIA GeForce RTX 3080",
+            "Windows 10 Pro"
+        ],
+        "rating": 4.9,
+        "stock": 8
+    },
+    {
+        "id": 8,
+        "categoryId": 5,
+        "name": "Sony Alpha a7 IV",
+        "description": "Sony Alpha a7 IV Mirrorless Camera",
+        "price": 2800,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fsony-alpha-a7-iv.png?alt=media&token=78b19f86-4210-42d7-947c-993ca0a3f21e",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "sony",
+            "alpha",
+            "a7",
+            "iv",
+            "mirrorless",
+            "camera"
+        ],
+        "features": [
+            "35.9 x 23.9mm 24.2MP Exmor RS CMOS sensor",
+            "BIONZ X Image Processor",
+            "4K UHD video recording",
+            "5-axis in-body image stabilization",
+            "3-inch tiltable touchscreen",
+            "Built-in Wi-Fi and Bluetooth"
+        ],
+        "rating": 4.7,
+        "stock": 12
+    },
+    {
+        "id": 9,
+        "categoryId": 5,
+        "name": "Eames Lounge Chair",
+        "description": "The iconic Eames Lounge Chair and Ottoman, designed by Charles and Ray Eames in 1956, is a classic symbol of mid-century modern design.",
+        "price": 3000,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Feames-lounge-chair.png?alt=media&token=aa5b3c17-9024-4c48-b32e-1d4ff4e7f823",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "eames",
+            "lounge",
+            "chair",
+            "ottoman",
+            "mid-century"
+        ],
+        "features": [
+            "Material: Leather and molded plywood",
+            "Color: Black",
+            "Dimensions: 32.75 x 32.75 x 32.75 inches"
+        ],
+        "rating": 4.9,
+        "stock": 3
+    },
+    {
+        "id": 10,
+        "categoryId": 5,
+        "name": "Microsoft Surface Book 4",
+        "description": "Microsoft Surface Book 4 Convertible Laptop 512GB",
+        "price": 2300,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fmicrosoft-surface-book-4.png?alt=media&token=f5f39838-125b-46ab-9bb1-2c27e013e5bf",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "microsoft",
+            "surface",
+            "book",
+            "4",
+            "convertible",
+            "laptop",
+            "512gb"
+        ],
+        "features": [
+            "13.5-inch PixelSense display",
+            "Intel Core i7 processor",
+            "16GB RAM",
+            "512GB SSD storage",
+            "NVIDIA GeForce GTX 1650",
+            "Windows 11 Pro"
+        ],
+        "rating": 4.7,
+        "stock": 10
+    },
+    {
+        "id": 11,
+        "categoryId": 5,
+        "name": "Google Pixel 7",
+        "description": "Google Pixel 7 128GB",
+        "price": 999,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fgoogle-pixel-7.png?alt=media&token=800bdbe9-86ef-49f9-baf1-8d46f13bb687",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "google",
+            "pixel",
+            "7",
+            "128gb"
+        ],
+        "features": [
+            "6.2-inch AMOLED display",
+            "Google Tensor processor",
+            "8GB RAM",
+            "128GB storage",
+            "50MP+12MP dual rear cameras",
+            "16MP front camera",
+            "4600mAh battery"
+        ],
+        "rating": 4.6,
+        "stock": 18
+    },
+    {
+        "id": 12,
+        "categoryId": 5,
+        "name": "Amazon Kindle Paperwhite",
+        "description": "Amazon Kindle Paperwhite 32GB E-Reader",
+        "price": 149,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fkindle-paperwhite.png?alt=media&token=5b1580b1-1e4b-490d-9917-0a35d97012ac",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "amazon",
+            "kindle",
+            "paperwhite",
+            "32gb",
+            "ereader"
+        ],
+        "features": [
+            "6-inch high-resolution display",
+            "Waterproof design",
+            "Built-in adjustable light",
+            "Wi-Fi connectivity",
+            "Battery life: Weeks"
+        ],
+        "rating": 4.8,
+        "stock": 25
+    },
+    {
+        "id": 13,
+        "categoryId": 5,
+        "name": "Herman Miller Aeron Chair",
+        "description": "The Herman Miller Aeron Chair, with its innovative design and ergonomic features, is one of the most iconic office chairs in the world.",
+        "price": 1200,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fherman-miller-aeron-chair.png?alt=media&token=87c685f1-925d-4fc9-8779-d33f2a24a7b6",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "herman",
+            "miller",
+            "aeron",
+            "chair",
+            "office",
+            "ergonomic"
+        ],
+        "features": [
+            "Material: Mesh fabric and steel",
+            "Color: Graphite",
+            "Adjustable PostureFit SL and lumbar support",
+            "Size: Medium",
+            "Dimensions: 41 x 27 x 17 inches"
+        ],
+        "rating": 4.9,
+        "stock": 7
+    },
+    {
+        "id": 14,
+        "categoryId": 5,
+        "name": "OnePlus 10 Pro",
+        "description": "OnePlus 10 Pro 256GB",
+        "price": 899,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Foneplus-10-pro.png?alt=media&token=2f6cd690-3219-4870-9e8f-67db76c57f63",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "oneplus",
+            "10",
+            "pro",
+            "256gb"
+        ],
+        "features": [
+            "6.7-inch Fluid AMOLED display",
+            "Snapdragon 895 chipset",
+            "8GB RAM",
+            "256GB storage",
+            "50MP+16MP+8MP triple rear cameras",
+            "32MP front camera",
+            "4500mAh battery"
+        ],
+        "rating": 4.7,
+        "stock": 14
+    },
+    {
+        "id": 15,
+        "categoryId": 5,
+        "name": "Sony WH-1000XM4",
+        "description": "Sony WH-1000XM4 Wireless Noise-Canceling Headphones",
+        "price": 299,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fsony-wh-1000xm4.png?alt=media&token=d463799f-4c2b-4385-a01e-b856cbe67e5a",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "sony",
+            "wh-1000xm4",
+            "wireless",
+            "headphones",
+            "noise-canceling"
+        ],
+        "features": [
+            "Industry-leading noise cancelation",
+            "Bluetooth 5.0 connectivity",
+            "30-hour battery life",
+            "Built-in microphone for hands-free calls",
+            "Touch controls and voice assistant support"
+        ],
+        "rating": 4.9,
+        "stock": 20
+    },
+    {
+        "id": 16,
+        "categoryId": 5,
+        "name": "Herman Miller Embody Chair",
+        "description": "Herman Miller Embody Ergonomic Office Chair",
+        "price": 1600,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fherman-miller-embody-chair.png?alt=media&token=785baf9c-3365-49eb-91da-84336ab2b2e3",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "herman",
+            "miller",
+            "embody",
+            "ergonomic",
+            "office",
+            "chair"
+        ],
+        "features": [
+            "Pixelated support system for dynamic spine alignment",
+            "Breathable and flexible backrest",
+            "Adjustable seat depth and height",
+            "Tilt limiter and seat angle adjustment",
+            "10-year warranty"
+        ],
+        "rating": 5,
+        "stock": 5
+    },
+    {
+        "id": 17,
+        "categoryId": 5,
+        "name": "Xiaomi Mi 12",
+        "description": "Xiaomi Mi 12 128GB",
+        "price": 799,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fxiaomi-mi-12.png?alt=media&token=e65f06e7-3450-4d80-bae4-35426ad91ac0",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "xiaomi",
+            "mi",
+            "12",
+            "128gb"
+        ],
+        "features": [
+            "6.8-inch AMOLED display",
+            "Qualcomm Snapdragon 895",
+            "12GB RAM",
+            "128GB storage",
+            "108MP+48MP+8MP triple rear cameras",
+            "32MP front camera",
+            "5000mAh battery"
+        ],
+        "rating": 4.6,
+        "stock": 22
+    },
+    {
+        "id": 18,
+        "categoryId": 5,
+        "name": "DJI Mavic 3 Pro",
+        "description": "DJI Mavic 3 Pro Quadcopter Drone",
+        "price": 1899,
+        "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/products%2Fdji-mavic-3-pro.png?alt=media&token=ae287d86-430e-4a97-aacf-88e6a8bf88f9",
+        "currency": {
+            "symbol": "$",
+            "code": "USD",
+            "name": "US Dollar"
+        },
+        "quantity": 1,
+        "tags": [
+            "dji",
+            "mavic",
+            "3",
+            "pro",
+            "quadcopter",
+            "drone"
+        ],
+        "features": [
+            "4K Ultra HD video recording",
+            "20MP Hasselblad camera",
+            "Omnidirectional obstacle sensing",
+            "31-minute flight time",
+            "Foldable and portable design"
+        ],
+        "rating": 4.8,
+        "stock": 9
     }
 ]
