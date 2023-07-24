@@ -1,7 +1,10 @@
-import { ActivityIndicator, SafeAreaView, StyleSheet, View } from 'react-native';
-import {useFonts} from 'expo-font'
-import { COLORS, FONTS } from './themes';
-import RootNavigator from './navigation';
+import { useFonts } from 'expo-font';
+import { SafeAreaView, StyleSheet, View, ActivityIndicator } from 'react-native';
+import { Provider } from 'react-redux';
+
+import RootNavigator from './navigations';
+import { store } from './store';
+import { FONTS, COLORS } from './themes';
 
 export default function App() {
     const [loaded] = useFonts({
@@ -11,18 +14,20 @@ export default function App() {
         [FONTS.bold]: require('../assets/fonts/Kanit-Bold.ttf'),
     })
 
-    if(!loaded) {
+    if (!loaded) {
         return (
             <View style={styles.loaderContainer}>
                 <ActivityIndicator color={COLORS.primary} size="large" />
             </View>
-        )
+        );
     }
 
     return (
-        <SafeAreaView style={styles.container}>
-            <RootNavigator />
-        </SafeAreaView>
+        <Provider store={store}>
+            <SafeAreaView style={styles.container}>
+                <RootNavigator />
+            </SafeAreaView>
+        </Provider>
     );
 }
 

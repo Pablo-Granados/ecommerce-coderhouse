@@ -5,4 +5,5 @@ export const COLORS = {
     background: '#37333C', //negro
     black: '#000000',
     white: '#FFFFFF',
+    gray: '#CCCCCC',
   };
