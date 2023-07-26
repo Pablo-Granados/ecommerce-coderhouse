@@ -9,7 +9,7 @@ const CategoryItem = ({ id, name, backgroundColor, backgroundImage, onSelectCate
     <TouchableHighlight
       onPress={() => onSelectCategory(id)}
       style={[styles.container, { backgroundColor }, style]}
-      underlayColor={COLORS.primary}>
+      underlayColor={COLORS.gray}>
       <ImageBackground
         source={{ uri: backgroundImage }}
         style={[styles.imageBackground, style]}

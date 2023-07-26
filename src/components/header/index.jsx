@@ -2,7 +2,7 @@ import { View, Text, useWindowDimensions } from 'react-native';
 
 import { styles } from './styles';
 
-const Header = ({ title, style }) => {
+const Header = ({ title, style}) => {
 
   const {width} = useWindowDimensions();
   
@@ -10,7 +10,7 @@ const Header = ({ title, style }) => {
 
   return (
     <View style={[isTablet ? styles.tabletContainer : styles.container, style]}>
-      <Text style={isTablet ? styles.tabletTitle : styles.title}>{title}</Text>
+      <Text style={[isTablet ? styles.tabletTitle : styles.title, style]}>{title}</Text>
     </View>
   );
 };

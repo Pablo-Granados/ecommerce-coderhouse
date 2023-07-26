@@ -15,13 +15,13 @@ const TabsNavigator = () => {
         headerShown: false,
         tabBarLabelStyle: {
           fontFamily: FONTS.regular,
-          fontSize: 10,
+          fontSize: 12,
         },
         tabBarStyle: {
-          backgroundColor: COLORS.white,
+          backgroundColor: COLORS.primary,
         },
-        tabBarActiveTintColor: COLORS.primary,
-        tabBarInactiveTintColor: COLORS.gray,
+        tabBarActiveTintColor: COLORS.dorado,
+        tabBarInactiveTintColor: COLORS.secondary,
         tabBarIconStyle: {
           fontSize: 22,
         },
@@ -30,9 +30,9 @@ const TabsNavigator = () => {
         name="ShopTab"
         component={ShopNavigator}
         options={{
-          tabBarLabel: 'Shop',
+          tabBarLabel: 'Inicio',
           tabBarIcon: ({ focused, color }) => {
-            return <Ionicons name={focused ? 'home' : 'home-outline'} size={20} color={color} />;
+            return <Ionicons name={focused ? 'home' : 'home-outline'} size={30} color={color} />;
           },
         }}
       />
@@ -40,16 +40,16 @@ const TabsNavigator = () => {
         name="CartTab"
         component={CartNavigator}
         options={{
-          tabBarLabel: 'Cart',
+          tabBarLabel: 'Carrito',
           tabBarIcon: ({ focused, color }) => (
-            <Ionicons name={focused ? 'cart' : 'cart-outline'} size={20} color={color} />
+            <Ionicons name={focused ? 'cart' : 'cart-outline'} size={30} color={color} />
           ),
-          tabBarBadge: 2,
+        //   tabBarBadge: 2,
           tabBarBadgeStyle: {
-            backgroundColor: COLORS.secodary,
+            backgroundColor: COLORS.primary,
             color: COLORS.white,
             fontFamily: FONTS.regular,
-            fontSize: 11,
+            fontSize: 12,
           },
         }}
       />
@@ -57,9 +57,9 @@ const TabsNavigator = () => {
         name="OrdersTab"
         component={OrdersNavigator}
         options={{
-          tabBarLabel: 'Orders',
+          tabBarLabel: 'Ordenes',
           tabBarIcon: ({ focused, color }) => (
-            <Ionicons name={focused ? 'file-tray' : 'file-tray-outline'} size={20} color={color} />
+            <Ionicons name={focused ? 'file-tray' : 'file-tray-outline'} size={30} color={color} />
           ),
         }}
       />

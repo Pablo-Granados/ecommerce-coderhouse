@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
     categoryContainer: {
         marginTop: 15,
         marginHorizontal: 15,
+
     },
     listCategory: {
         gap: 15,

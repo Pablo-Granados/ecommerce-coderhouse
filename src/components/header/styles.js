@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
 
     tabletContainer: {
         marginTop: StatusBar.currentHeight,
-        backgroundColor: COLORS.primary,
+        backgroundColor: COLORS.background,
         height: 100,
         justifyContent: 'center',
         alignItems: 'center',
@@ -36,12 +36,12 @@ export const styles = StyleSheet.create({
     },
     title: {
         fontSize: 22,
-        color: COLORS.text,
-        fontWeight: "bold",
+        color: COLORS.background,
+        fontWeight: "bolder",
     },
     tabletTitle: {
         fontSize: 35,
-        color: COLORS.text,
+        color: COLORS.background,
         fontFamily: FONTS.bold,
     },
 })

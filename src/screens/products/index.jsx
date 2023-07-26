@@ -9,9 +9,9 @@ import { COLORS } from '../../themes';
 
 function Product({ navigation, route }) {
     const { categoryId, color } = route.params;
-    const products = useSelector((state) => state.products.data);    const [search, setSearch] = useState('');
+    const products = useSelector((state) => state.products.data);    
+    const [search, setSearch] = useState('');
     const [filteredProducts, setFilteredProducts] = useState([]);
-    const [borderColor, setBorderColor] = useState(COLORS.primary);
     const onHandleBlur = () => { };
     const onHandleChangeText = (text) => {
         setSearch(text);
@@ -52,15 +52,14 @@ function Product({ navigation, route }) {
                     value={search}
                     placeholder="Buscar..."
                     placeholderTextColor="black"
-                    borderColor={borderColor}
                 />
                 {search.length > 0 && (
                     <Ionicons
                         style={styles.clearIcon}
                         onPress={clearSearch}
                         name="close-circle"
-                        size={20}
-                        color={COLORS.black}
+                        size={30}
+                        color={COLORS.dorado}
                     />
                 )}
             </View>

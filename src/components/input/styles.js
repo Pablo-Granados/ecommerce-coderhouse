@@ -11,8 +11,9 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 10,
     paddingHorizontal: 10,
-    color: COLORS.black,
+    color: COLORS.dorado,
     fontSize: 14,
     height: 35,
+    borderColor: COLORS.dorado,
   },
 });
