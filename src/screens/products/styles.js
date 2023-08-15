@@ -79,4 +79,9 @@ export const styles = StyleSheet.create({
     color: COLORS.primary,
 
   },
+  containerLoader: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });

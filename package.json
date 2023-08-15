@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce-coderhouse",
+  "name": "ecommerce-coderhouse-rn",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",

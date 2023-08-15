@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     height: 145,
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.dorado,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
